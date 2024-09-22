@@ -17,15 +17,15 @@ export const MainPage = () => (
                 <div className="advantages">
                     <div className="advantage">
                         <div className="advantage-icon">
-                            <img src="../Images/ideas.png" alt="ideas"/>
-                        </div>
-                        <h3>Воплощение ваших идей</h3>
-                    </div>
-                    <div className="advantage">
-                        <div className="advantage-icon">
                             <img src="../Images/unique.png" alt="unique"/>
                         </div>
                         <h3>Уникальность модели</h3>
+                    </div>
+                    <div className="advantage">
+                        <div className="advantage-icon">
+                            <img src="../Images/ideas.png" alt="ideas"/>
+                        </div>
+                        <h3>Воплощение ваших идей</h3>
                     </div>
                     <div className="advantage">
                         <div className="advantage-icon">
@@ -34,6 +34,9 @@ export const MainPage = () => (
                         <h3>Безупречная посадка<br/> по фигуре</h3>
                     </div>
                 </div>
+            </section>
+            <section className="">
+
             </section>
         </main>
         <footer>

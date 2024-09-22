@@ -41,7 +41,9 @@ body {
   height: 600px;
   display: flex;
   background-image: url(../public/Images/background.jpg);
-  background-repeat: no-repeat;
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .advantages {
   display: flex;
@@ -53,9 +55,12 @@ body {
   padding: 10px;
   text-align: center;
   margin-right: 30px;
+  background-color: rgba(171, 156, 138, 0.9);
+  border-radius: 0 50% 0 50% ;
 }
 .advantage h3 {
   font-size: 24px;
+  padding: 3px;
 }
 .advantage-icon img {
   height: 100px;
