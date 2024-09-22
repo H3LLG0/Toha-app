@@ -1,10 +1,65 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+.navbar {
+  padding: 5px;
+  background-color: rgb(171, 156, 138);
+}
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+#Link {
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+  font-size: 20px;
+}
+#Link-logo {
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+}
+#Link:hover{
+  border-bottom: 1px solid black;
+}
+#Link-logo:hover{
+  border-bottom: 1px solid black;
+}
+.nav-logo {
+  margin-right: 100px;
+  font-size: 24px;
+}
+.about-us {
+  margin-top: 20px;
+  height: 600px;
+  display: flex;
+  background-image: url(../public/Images/background.jpg);
+  background-repeat: no-repeat;
+}
+.advantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+.advantage {
+  padding: 10px;
+  text-align: center;
+  margin-right: 30px;
+}
+.advantage h3 {
+  font-size: 24px;
+}
+.advantage-icon img {
+  height: 100px;
+  width: 100px;
 }
 
 code {
