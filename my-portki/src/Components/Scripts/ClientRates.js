@@ -23,8 +23,14 @@ window.onload = function() {
         }
     });
 }
+let submit = document.getElementById('submit-btn');
 
-$('#rate-us').on('submit',function()
-{
-    
-});
+submit.onclick = function (event) {
+        event.preventDefault()
+        const body = JSON.stringify({
+                    'name': document.getElementById('name').value,
+                    'surname':document.getElementById('surname').value,
+                    'rating':document.getElementById('rating').value,
+                    'rate-text':document.getElementById('rate-text').value
+                });
+}
