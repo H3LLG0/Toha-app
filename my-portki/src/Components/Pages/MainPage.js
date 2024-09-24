@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import * as ClientRates from "../Scripts/ClientRates";
+import * as js from "../Scripts/ClientRates";
 
 export const MainPage = () => (
     <div className="app-wrapper">
@@ -66,13 +66,13 @@ export const MainPage = () => (
             <section className="our-reating">
                 <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
                 <div className="rating-wrapper">
-
+                    
                 </div>
             </section>
             <section className="rate">
                 <h2>ОЦЕНИТЕ НАШУ РАБОТУ</h2>
                 <div className="rate-form">
-                    <form className="rate-us">
+                    <form className="rate-us" method="POST" id="rate-us">
                         <div className="input-text">
                             <input type="text" name="username" id="name" placeholder="Имя"/> <input type="text" name="usersurname" id="surname" placeholder="Фамилия"/>
                         </div>

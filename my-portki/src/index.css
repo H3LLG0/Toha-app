@@ -166,6 +166,36 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
+.our-reating {
+  margin-top: 20px;
+}
+.our-reating h2 {
+  text-align: center;
+}
+.rating-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+.geted-rate {
+  padding: 10px;
+  width: 400px;
+  background-color: rgba(171, 156, 138, 0.9);
+  border: 1px solid rgba(64, 59, 52, 0.9);
+  border-radius: 5px;
+  color: black;
+}
+.rate-head {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.geted-rate-text {
+  text-align: justify;
+  font-size: 18px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
