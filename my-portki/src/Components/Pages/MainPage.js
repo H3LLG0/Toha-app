@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import * as ClientRates from "../Scripts/ClientRates";
 
 export const MainPage = () => (
     <div className="app-wrapper">
@@ -69,19 +70,55 @@ export const MainPage = () => (
                 </div>
             </section>
             <section className="rate">
+                <h2>ОЦЕНИТЕ НАШУ РАБОТУ</h2>
                 <div className="rate-form">
                     <form className="rate-us">
-                        <input type="text" name="username" id="name" placeholder="Имя"/> <input type="text" name="usersurname" id="surname" placeholder="Фамилия"/><br/>
-                        <span>0</span><input type="range" min="0" max="5" step="1" name="rating" id="rating"/><span>5</span> 
-                        <textarea placeholder="текст" id="rate-text" name="rate-text">
+                        <div className="input-text">
+                            <input type="text" name="username" id="name" placeholder="Имя"/> <input type="text" name="usersurname" id="surname" placeholder="Фамилия"/>
+                        </div>
+                        <div className="polzunok">
+                            <label>Выберите балл</label>           <div className="polzunok-line"><span>0</span><input type="range" min="0" max="5" step="1" name="rating" id="rating" list="mark"/><span>5</span></div>
+                            <datalist id="mark">
+                                <option value="0"/>
+                                <option value="1"/>
+                                <option value="2"/>
+                                <option value="3"/>
+                                <option value="4"/>
+                                <option value="5"/>
+                            </datalist>
+                        </div>
+                        <textarea className="rate-text" placeholder="текст" id="rate-text" name="rate-text">
 
-                        </textarea>
+                        </textarea><br/>
+                        <button className="form-submit" type="submit">Отправить</button>
                     </form>
                 </div>
             </section>
         </main>
         <footer>
-
+            <div className="footer-content">
+                <div className="phone">
+                    <span>Телефоны</span>
+                    <div>
+                        8 (960) 746-72-31<br/>
+                        8 (910) 921-06-96 
+                    </div>
+                </div>
+                <div className="work-day">
+                    <span>Часы работы</span>
+                    <div>
+                    Пн-Пт - c 09:00 до 18:00<br/>
+                    Сб - с 10:00 до 15:00<br/>
+                    Вс - выходной
+                    </div>
+                </div>
+                <div className="email">
+                    <span>E-mail</span>
+                    <div>
+                        fasons@yandex.ru
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 );

@@ -15,7 +15,32 @@ const BuildPricePage = () => (
         <main>
             <h1>ПРАЙС</h1>
 
-        </main>        
+        </main>
+        <footer>
+            <div className="footer-content">
+                <div className="phone">
+                    <span>Телефоны</span>
+                    <div>
+                        8 (960) 746-72-31<br/>
+                        8 (910) 921-06-96 
+                    </div>
+                </div>
+                <div className="work-day">
+                    <span>Часы работы</span>
+                    <div>
+                    Пн-Пт - c 09:00 до 18:00<br/>
+                    Сб - с 10:00 до 15:00<br/>
+                    Вс - выходной
+                    </div>
+                </div>
+                <div className="email">
+                    <span>E-mail</span>
+                    <div>
+                        fasons@yandex.ru
+                    </div>
+                </div>
+            </div>
+        </footer>        
     </>
 );
 export const PricePage = () => BuildPricePage();
@@ -35,6 +60,31 @@ const BuildOurWork = () => (
         <main>
             <h1>НАШИ РАБОТЫ</h1>
         </main>
+        <footer>
+            <div className="footer-content">
+                <div className="phone">
+                    <span>Телефоны</span>
+                    <div>
+                        8 (960) 746-72-31<br/>
+                        8 (910) 921-06-96 
+                    </div>
+                </div>
+                <div className="work-day">
+                    <span>Часы работы</span>
+                    <div>
+                    Пн-Пт - c 09:00 до 18:00<br/>
+                    Сб - с 10:00 до 15:00<br/>
+                    Вс - выходной
+                    </div>
+                </div>
+                <div className="email">
+                    <span>E-mail</span>
+                    <div>
+                        fasons@yandex.ru
+                    </div>
+                </div>
+            </div>
+        </footer>
     </>
 );
 export const OurWork = () => BuildOurWork();
@@ -54,6 +104,31 @@ const BuildCreateOrder = () => (
         <main>
             <h1>ОФОРМИТЬ ЗАКАЗ</h1>
         </main>
+        <footer>
+            <div className="footer-content">
+                <div className="phone">
+                    <span>Телефоны</span>
+                    <div>
+                        8 (960) 746-72-31<br/>
+                        8 (910) 921-06-96 
+                    </div>
+                </div>
+                <div className="work-day">
+                    <span>Часы работы</span>
+                    <div>
+                    Пн-Пт - c 09:00 до 18:00<br/>
+                    Сб - с 10:00 до 15:00<br/>
+                    Вс - выходной
+                    </div>
+                </div>
+                <div className="email">
+                    <span>E-mail</span>
+                    <div>
+                        fasons@yandex.ru
+                    </div>
+                </div>
+            </div>
+        </footer>
     </>
 );
 export const CreateOrder = () => BuildCreateOrder();
