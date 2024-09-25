@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import * as js from '../Scripts/ClientRates';
+import { SubmitPost } from '../Scripts/ClientRates';
 
 export const MainPage = () => (
     <div className="app-wrapper">
@@ -72,7 +72,7 @@ export const MainPage = () => (
             <section className="rate">
                 <h2>ОЦЕНИТЕ НАШУ РАБОТУ</h2>
                 <div className="rate-form">
-                    {/* <form className="rate-us" id="rate-us"> */}
+                    <form className="rate-us" id="rate-us">
                         <div className="input-text">
                             <input type="text" name="username" id="name" placeholder="Имя"/> <input type="text" name="usersurname" id="surname" placeholder="Фамилия"/>
                         </div>
@@ -90,8 +90,8 @@ export const MainPage = () => (
                         <textarea className="rate-text" placeholder="текст" id="rate-text" name="rate-text">
 
                         </textarea><br/>
-                        <button className="form-submit" type="button" id="submit-btn">Отправить</button>
-                    {/* </form> */}
+                        <button onClick={SubmitPost} className="form-submit" type="submit" id="submit">Отправить</button>
+                    </form>
                 </div>
             </section>
         </main>
