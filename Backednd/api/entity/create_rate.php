@@ -12,10 +12,21 @@
     $db = $database->getConnection();
     $rating = new Rating($db);
 
-    $post = file_get_contents('php://input');
+    $rating->name = $_POST['name'];
+    $rating->surname = $_POST['surname'];
+    $rating->rate_mark = $_POST['rating'];
+    $rating->rate_text = $_POST['rate-text'];
 
-    $data = json_decode($post,true);
 
-    print_r($data);
+    if ($rating-> create()) {
+        http_response_code(201);
+        echo json_encode(array("message" => "отзыв оставлен"), JSON_UNESCAPED_UNICODE);
+    }
+    else {
+        http_response_code(503);
+
+        echo json_encode(array("message" => "Невозможно отправить отзыв."), JSON_UNESCAPED_UNICODE);
+    }
+
 
 ?>

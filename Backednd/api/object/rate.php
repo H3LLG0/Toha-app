@@ -28,7 +28,7 @@
 
         function create()
         {
-            $query = "INSERT INTO users
+            $query = "INSERT INTO rate
             SET
                 name=:name, surname=:surname, rate_mark=:rate_mark, rate_text=:rate_text";
 

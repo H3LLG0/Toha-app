@@ -27,13 +27,12 @@ window.onload = function() {
 
 export function SubmitPost(event)
 {
-    event.preventDefault();
-    const body = JSON.stringify({
+    const body = {
     'name': document.getElementById('name').value,
     'surname':document.getElementById('surname').value,
     'rating':document.getElementById('rating').value,
     'rate-text':document.getElementById('rate-text').value
-    });
+    };
     $.ajax({
         url:'http://backednd/api/entity/create_rate.php',
         method:'post',
@@ -41,7 +40,7 @@ export function SubmitPost(event)
         data: body,
         success: function(response)
         {
-        console.log(response);
+            console.log(response);
         }
     });
 

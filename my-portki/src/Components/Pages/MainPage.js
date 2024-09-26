@@ -87,9 +87,7 @@ export const MainPage = () => (
                                 <option value="5"/>
                             </datalist>
                         </div>
-                        <textarea className="rate-text" placeholder="текст" id="rate-text" name="rate-text">
-
-                        </textarea><br/>
+                        <input type="text" className="rate-text" placeholder="текст" id="rate-text" name="rate-text"/><br/>
                         <button onClick={SubmitPost} className="form-submit" type="submit" id="submit">Отправить</button>
                     </form>
                 </div>
