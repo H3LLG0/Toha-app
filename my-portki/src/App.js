@@ -1,6 +1,6 @@
 import { BrowserRouter,Routes, Route } from "react-router-dom";
 import { MainPage } from "./Components/Pages/MainPage";
-import { PricePage, OurWork, CreateOrder } from "./Components/Pages/Pages";
+import { PricePage, CreateOrder } from "./Components/Pages/Pages";
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage/>}/>
         <Route path="/price" element={<PricePage/>}/>
-        <Route path="/Our-work" element={<OurWork/>}/>
         <Route path="/create-order" element={<CreateOrder/>}/>
       </Routes>
     </BrowserRouter>

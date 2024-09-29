@@ -8,7 +8,6 @@ export const MainPage = () => (
                 <ul className="menu-list">
                     <li className="nav-logo"><Link id="Link-logo" to="/">WHERE MY PORTKI</Link></li>
                     <li><Link to="/price" id="Link">Прайс лист</Link></li>
-                    <li><Link to="/our-work" id="Link">Наши работы</Link></li>
                     <li><Link to="/create-order" id="Link">Оформить заказ</Link></li>
                 </ul>
             </nav>
