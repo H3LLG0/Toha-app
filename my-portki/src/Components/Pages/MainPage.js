@@ -1,6 +1,33 @@
 import { Link } from "react-router-dom";
 import { SubmitPost } from '../Scripts/ClientRates';
 
+// let $ = require('jquery');
+// window.$ = window.jQuery = $;
+
+// window.onload = function() {
+//     $.ajax({
+//         url: 'http://backednd/api/entity/read_rate.php',
+//         method: 'get',
+//         dataType: 'json',
+//         success: function(resp) {
+//            resp.forEach(element => {
+//             $('.rating-wrapper').append(`
+//                 <div class='geted-rate'>
+//                     <div class='rate-head'>
+//                         ${element.name} ${element.surname} <br/>
+//                         <span>Оценка: ${element.rate_mark}</span>
+//                     </div>
+//                     <div class='geted-rate-text'>
+//                         ${element.rate_text}
+//                     </div>
+//                 </div>
+//                 `);
+//            });
+//         }
+//     });
+    
+// }
+
 export const MainPage = () => (
     <div className="app-wrapper">
         <header>
@@ -62,12 +89,12 @@ export const MainPage = () => (
                     <strong>Любимая вещь в гардеробе.</strong> Мы постараемся сделать все, чтобы Ваша новая одежда еще долго приносила Вам радость.
                 </p>
             </section>
-            <section className="our-reating">
+            {/* <section className="our-reating">
                 <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
                 <div className="rating-wrapper">
                     
                 </div>
-            </section>
+            </section> */}
             <section className="rate">
                 <h2>ОЦЕНИТЕ НАШУ РАБОТУ</h2>
                 <div className="rate-form">
